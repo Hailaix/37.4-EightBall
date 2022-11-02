@@ -13,7 +13,10 @@ const EightBall = ({ answers }) => {
     }
 
     const reset = () => { 
-        setAns({ msg: "Think of a Question", color: "black" }) 
+        setAns({ msg: "Think of a Question", color: "black" });
+        setR(0);
+        setG(0);
+        setY(0); 
     }
 
     const [ans, setAns] = useState({ msg: "Think of a Question", color: "black" });
